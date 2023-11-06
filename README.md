@@ -1,5 +1,5 @@
 # structurizer
- Utility for creating multiblocks that can be loaded with sunsetutils. Provided as-is with no guarantees of anything (you will have to figure stuff out yourself).
+ Utility for creating multiblocks that can be loaded with [sunsetutils](https://github.com/MartinSVK12/sunsetutils). Provided as-is with no guarantees of anything (you will have to figure stuff out yourself).
 
 setup:
 1. download the latest godot+voxel-tools from https://github.com/Zylann/godot_voxel/actions/workflows/windows.yml

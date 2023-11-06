@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://doky5rnd5gjcy"]
+
+[ext_resource type="PackedScene" uid="uid://vhav1fjsrark" path="res://addons/node_explorer/NodeExplorer.tscn" id="1_w84t2"]
+
+[node name="NodeExplorer" type="Window"]
+title = "Node Explorer"
+initial_position = 3
+size = Vector2i(1024, 600)
+current_screen = 0
+
+[node name="Node Explorer" parent="." instance=ExtResource("1_w84t2")]

@@ -1,0 +1,15 @@
+[gd_resource type="VoxelBlockyLibrary" load_steps=5 format=3 uid="uid://cv4sngfv1i2yc"]
+
+[ext_resource type="Texture2D" uid="uid://c50pbo8x527ee" path="res://assets/texture_01.png" id="1_hhr4m"]
+
+[sub_resource type="VoxelBlockyModelEmpty" id="VoxelBlockyModelEmpty_xrncq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6780h"]
+albedo_texture = ExtResource("1_hhr4m")
+
+[sub_resource type="VoxelBlockyModelCube" id="VoxelBlockyModelCube_mp1lk"]
+material_override_0 = SubResource("StandardMaterial3D_6780h")
+atlas_size_in_tiles = Vector2i(1, 1)
+
+[resource]
+models = Array[VoxelBlockyModel]([SubResource("VoxelBlockyModelEmpty_xrncq"), SubResource("VoxelBlockyModelCube_mp1lk")])

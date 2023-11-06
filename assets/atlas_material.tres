@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://75yjysts7ju3"]
+
+[ext_resource type="Texture2D" uid="uid://dk2h47tgof57p" path="res://assets/atlas_blank.png" id="1_bjb0d"]
+
+[resource]
+transparency = 1
+depth_draw_mode = 1
+albedo_texture = ExtResource("1_bjb0d")
+texture_filter = 0
+texture_repeat = false

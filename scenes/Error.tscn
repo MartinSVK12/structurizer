@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqc1y845ktxnm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jpw0a"]
+font_size = 24
+
+[node name="Error" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Couldn't load block data or none has been provided.
+
+At least one block needs to be defined for this application to work."
+label_settings = SubResource("LabelSettings_jpw0a")
+
+[node name="Loading" type="ColorRect" parent="."]
+visible = false
+top_level = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.298039, 0.298039, 0.298039, 1)
+
+[node name="Label" type="Label" parent="Loading"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -13.0
+offset_right = 37.5
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Loading..."

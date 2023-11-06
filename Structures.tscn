@@ -1,0 +1,1106 @@
+[gd_scene load_steps=139 format=3 uid="uid://dwd4p3q6350x7"]
+
+[ext_resource type="BoxMesh" uid="uid://d0uhxvuuo4u1m" path="res://assets/outline_mesh.tres" id="1_j116e"]
+[ext_resource type="Shader" path="res://outline.gdshader" id="2_fa1c8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n8eyn"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_143kr"]
+material = SubResource("ShaderMaterial_n8eyn")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0eswc"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_n8myi"]
+material = SubResource("ShaderMaterial_0eswc")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g0xif"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r14sx"]
+material = SubResource("ShaderMaterial_g0xif")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5vxnd"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p7xol"]
+material = SubResource("ShaderMaterial_5vxnd")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lauph"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j4jy2"]
+material = SubResource("ShaderMaterial_lauph")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uotxu"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xjdx3"]
+material = SubResource("ShaderMaterial_uotxu")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s0p55"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hii05"]
+material = SubResource("ShaderMaterial_s0p55")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4f3oj"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rn61y"]
+material = SubResource("ShaderMaterial_4f3oj")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gxbn7"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f46ya"]
+material = SubResource("ShaderMaterial_gxbn7")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4siye"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kvbet"]
+material = SubResource("ShaderMaterial_4siye")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3gs6m"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8vyl2"]
+material = SubResource("ShaderMaterial_3gs6m")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xvkhw"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jw2wo"]
+material = SubResource("ShaderMaterial_xvkhw")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dofaf"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e3guw"]
+material = SubResource("ShaderMaterial_dofaf")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cv460"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_uwxq8"]
+material = SubResource("ShaderMaterial_cv460")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8x1br"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3dj11"]
+material = SubResource("ShaderMaterial_8x1br")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ie27x"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hgu7p"]
+material = SubResource("ShaderMaterial_ie27x")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v8ypm"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t2qmq"]
+material = SubResource("ShaderMaterial_v8ypm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7ka3r"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j03dv"]
+material = SubResource("ShaderMaterial_7ka3r")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jyapn"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vww4q"]
+material = SubResource("ShaderMaterial_jyapn")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xrw7b"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hio77"]
+material = SubResource("ShaderMaterial_xrw7b")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_440hi"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bg8v7"]
+material = SubResource("ShaderMaterial_440hi")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pfb07"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p7p5h"]
+material = SubResource("ShaderMaterial_pfb07")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tokni"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rq7wo"]
+material = SubResource("ShaderMaterial_tokni")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v10fm"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f11d6"]
+material = SubResource("ShaderMaterial_v10fm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ocway"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_t7fcj"]
+material = SubResource("ShaderMaterial_ocway")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_quyis"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tb2ov"]
+material = SubResource("ShaderMaterial_quyis")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k2lk2"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_tkxmr"]
+material = SubResource("ShaderMaterial_k2lk2")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qhed8"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_bcqad"]
+material = SubResource("ShaderMaterial_qhed8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kd2u5"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_akk3u"]
+material = SubResource("ShaderMaterial_kd2u5")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8f1c8"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hj664"]
+material = SubResource("ShaderMaterial_8f1c8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1fxhg"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8dxa6"]
+material = SubResource("ShaderMaterial_1fxhg")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ms0ag"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8y5f2"]
+material = SubResource("ShaderMaterial_ms0ag")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_evdxo"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wbj3w"]
+material = SubResource("ShaderMaterial_evdxo")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gvwqj"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wufqx"]
+material = SubResource("ShaderMaterial_gvwqj")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_srdks"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ehitk"]
+material = SubResource("ShaderMaterial_srdks")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uk0i3"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1dn2n"]
+material = SubResource("ShaderMaterial_uk0i3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n5i86"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_l6ngb"]
+material = SubResource("ShaderMaterial_n5i86")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qw3cb"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hxj5b"]
+material = SubResource("ShaderMaterial_qw3cb")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jiuvc"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_26r7n"]
+material = SubResource("ShaderMaterial_jiuvc")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vuxdu"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rw52p"]
+material = SubResource("ShaderMaterial_vuxdu")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wlar8"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_xoa4v"]
+material = SubResource("ShaderMaterial_wlar8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xqdtc"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_gdcwm"]
+material = SubResource("ShaderMaterial_xqdtc")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_22lhj"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_d33q0"]
+material = SubResource("ShaderMaterial_22lhj")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cvpk6"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wpvd8"]
+material = SubResource("ShaderMaterial_cvpk6")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m6d7q"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7mwxw"]
+material = SubResource("ShaderMaterial_m6d7q")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yddfi"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_77b5k"]
+material = SubResource("ShaderMaterial_yddfi")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w0d3d"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_8apnr"]
+material = SubResource("ShaderMaterial_w0d3d")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qp6lx"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4unkn"]
+material = SubResource("ShaderMaterial_qp6lx")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_re505"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7e812"]
+material = SubResource("ShaderMaterial_re505")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uirki"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h0wyg"]
+material = SubResource("ShaderMaterial_uirki")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5mmgf"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vv8xj"]
+material = SubResource("ShaderMaterial_5mmgf")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iuia4"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4hiv1"]
+material = SubResource("ShaderMaterial_iuia4")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uwi30"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jaqxc"]
+material = SubResource("ShaderMaterial_uwi30")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2xemx"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f5xq2"]
+material = SubResource("ShaderMaterial_2xemx")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vcvjd"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dsqmy"]
+material = SubResource("ShaderMaterial_vcvjd")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tvnh1"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e6i5w"]
+material = SubResource("ShaderMaterial_tvnh1")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v1m3j"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h7fnu"]
+material = SubResource("ShaderMaterial_v1m3j")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_68x27"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v8c8u"]
+material = SubResource("ShaderMaterial_68x27")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bsrc7"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hl8ud"]
+material = SubResource("ShaderMaterial_bsrc7")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_25hjm"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_go3xr"]
+material = SubResource("ShaderMaterial_25hjm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ewwae"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vxu3l"]
+material = SubResource("ShaderMaterial_ewwae")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h70yo"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_wsxte"]
+material = SubResource("ShaderMaterial_h70yo")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_os16i"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ag57m"]
+material = SubResource("ShaderMaterial_os16i")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_np7p4"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_54itx"]
+material = SubResource("ShaderMaterial_np7p4")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1x44h"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rkfru"]
+material = SubResource("ShaderMaterial_1x44h")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l47p7"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pgfwy"]
+material = SubResource("ShaderMaterial_l47p7")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u6772"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jjtxs"]
+material = SubResource("ShaderMaterial_u6772")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2aepi"]
+render_priority = 0
+shader = ExtResource("2_fa1c8")
+shader_parameter/scale = Vector3(1.05, 1.05, 1.05)
+shader_parameter/width = 0.05
+shader_parameter/sharpness = 1.0
+shader_parameter/glow = 1.0
+shader_parameter/color = Color(1, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6gpik"]
+material = SubResource("ShaderMaterial_2aepi")
+
+[node name="Structures" type="Node3D"]
+
+[node name="dimensionalAnchor" type="Node3D" parent="."]
+
+[node name="origin" type="MeshInstance3D" parent="dimensionalAnchor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 24)
+mesh = ExtResource("1_j116e")
+
+[node name="_Label3D_691" type="Label3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+billboard = 1
+text = "dimensionalAnchor"
+
+[node name="_MeshInstance3D_692" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -4, 0)
+custom_aabb = AABB(-10000, 0, 0, 0, 0, 0)
+mesh = SubResource("BoxMesh_143kr")
+
+[node name="_MeshInstance3D_693" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, -1)
+mesh = SubResource("BoxMesh_n8myi")
+
+[node name="_MeshInstance3D_694" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -4, 0)
+mesh = SubResource("BoxMesh_r14sx")
+
+[node name="_MeshInstance3D_695" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 1)
+mesh = SubResource("BoxMesh_p7xol")
+
+[node name="_MeshInstance3D_696" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -3, 1)
+mesh = SubResource("BoxMesh_j4jy2")
+
+[node name="_MeshInstance3D_697" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -3, 1)
+mesh = SubResource("BoxMesh_xjdx3")
+
+[node name="_MeshInstance3D_698" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -3, -1)
+mesh = SubResource("BoxMesh_hii05")
+
+[node name="_MeshInstance3D_699" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -3, -1)
+mesh = SubResource("BoxMesh_rn61y")
+
+[node name="_MeshInstance3D_700" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -3, 0)
+mesh = SubResource("BoxMesh_f46ya")
+
+[node name="_MeshInstance3D_701" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, -2)
+mesh = SubResource("BoxMesh_kvbet")
+
+[node name="_MeshInstance3D_702" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -3, 0)
+mesh = SubResource("BoxMesh_8vyl2")
+
+[node name="_MeshInstance3D_703" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3, 2)
+mesh = SubResource("BoxMesh_jw2wo")
+
+[node name="_MeshInstance3D_704" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -2, 0)
+mesh = SubResource("BoxMesh_e3guw")
+
+[node name="_MeshInstance3D_705" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 3)
+mesh = SubResource("BoxMesh_uwxq8")
+
+[node name="_MeshInstance3D_706" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -2, 0)
+mesh = SubResource("BoxMesh_3dj11")
+
+[node name="_MeshInstance3D_707" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, -3)
+mesh = SubResource("BoxMesh_hgu7p")
+
+[node name="_MeshInstance3D_708" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, 0)
+mesh = SubResource("BoxMesh_t2qmq")
+
+[node name="_MeshInstance3D_709" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+mesh = SubResource("BoxMesh_j03dv")
+
+[node name="_MeshInstance3D_710" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)
+mesh = SubResource("BoxMesh_vww4q")
+
+[node name="_MeshInstance3D_711" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 0)
+mesh = SubResource("BoxMesh_hio77")
+
+[node name="_MeshInstance3D_712" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -4)
+mesh = SubResource("BoxMesh_bg8v7")
+
+[node name="_MeshInstance3D_713" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -1, 0)
+mesh = SubResource("BoxMesh_p7p5h")
+
+[node name="_MeshInstance3D_714" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 4)
+mesh = SubResource("BoxMesh_rq7wo")
+
+[node name="_MeshInstance3D_715" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4)
+mesh = SubResource("BoxMesh_f11d6")
+
+[node name="_MeshInstance3D_716" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4)
+mesh = SubResource("BoxMesh_t7fcj")
+
+[node name="_MeshInstance3D_717" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -4)
+mesh = SubResource("BoxMesh_tb2ov")
+
+[node name="_MeshInstance3D_718" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1)
+mesh = SubResource("BoxMesh_tkxmr")
+
+[node name="_MeshInstance3D_719" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 1)
+mesh = SubResource("BoxMesh_bcqad")
+
+[node name="_MeshInstance3D_720" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 0)
+mesh = SubResource("BoxMesh_akk3u")
+
+[node name="_MeshInstance3D_721" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4)
+mesh = SubResource("BoxMesh_hj664")
+
+[node name="_MeshInstance3D_722" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
+mesh = SubResource("BoxMesh_8dxa6")
+
+[node name="_MeshInstance3D_723" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 4)
+mesh = SubResource("BoxMesh_8y5f2")
+
+[node name="_MeshInstance3D_724" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 3)
+mesh = SubResource("BoxMesh_wbj3w")
+
+[node name="_MeshInstance3D_725" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 3)
+mesh = SubResource("BoxMesh_wufqx")
+
+[node name="_MeshInstance3D_726" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, 3)
+mesh = SubResource("BoxMesh_ehitk")
+
+[node name="_MeshInstance3D_727" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1, 3)
+mesh = SubResource("BoxMesh_1dn2n")
+
+[node name="_MeshInstance3D_728" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, -1)
+mesh = SubResource("BoxMesh_l6ngb")
+
+[node name="_MeshInstance3D_729" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, 1)
+mesh = SubResource("BoxMesh_hxj5b")
+
+[node name="_MeshInstance3D_730" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, -1)
+mesh = SubResource("BoxMesh_26r7n")
+
+[node name="_MeshInstance3D_731" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -1, 1)
+mesh = SubResource("BoxMesh_rw52p")
+
+[node name="_MeshInstance3D_732" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, 1)
+mesh = SubResource("BoxMesh_xoa4v")
+
+[node name="_MeshInstance3D_733" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1, -1)
+mesh = SubResource("BoxMesh_gdcwm")
+
+[node name="_MeshInstance3D_734" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, 1)
+mesh = SubResource("BoxMesh_d33q0")
+
+[node name="_MeshInstance3D_735" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -1, -1)
+mesh = SubResource("BoxMesh_wpvd8")
+
+[node name="_MeshInstance3D_736" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, -3)
+mesh = SubResource("BoxMesh_7mwxw")
+
+[node name="_MeshInstance3D_737" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -3)
+mesh = SubResource("BoxMesh_77b5k")
+
+[node name="_MeshInstance3D_738" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, -3)
+mesh = SubResource("BoxMesh_8apnr")
+
+[node name="_MeshInstance3D_739" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -3)
+mesh = SubResource("BoxMesh_4unkn")
+
+[node name="_MeshInstance3D_740" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -2)
+mesh = SubResource("BoxMesh_7e812")
+
+[node name="_MeshInstance3D_741" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -1)
+mesh = SubResource("BoxMesh_h0wyg")
+
+[node name="_MeshInstance3D_742" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 0)
+mesh = SubResource("BoxMesh_vv8xj")
+
+[node name="_MeshInstance3D_743" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 3, 0)
+mesh = SubResource("BoxMesh_4hiv1")
+
+[node name="_MeshInstance3D_744" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4, 0)
+mesh = SubResource("BoxMesh_jaqxc")
+
+[node name="_MeshInstance3D_745" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 1)
+mesh = SubResource("BoxMesh_f5xq2")
+
+[node name="_MeshInstance3D_746" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 4, 0)
+mesh = SubResource("BoxMesh_dsqmy")
+
+[node name="_MeshInstance3D_747" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 0)
+mesh = SubResource("BoxMesh_e6i5w")
+
+[node name="_MeshInstance3D_748" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3, 0)
+mesh = SubResource("BoxMesh_h7fnu")
+
+[node name="_MeshInstance3D_749" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 3)
+mesh = SubResource("BoxMesh_v8c8u")
+
+[node name="_MeshInstance3D_750" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 2)
+mesh = SubResource("BoxMesh_hl8ud")
+
+[node name="_MeshInstance3D_751" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3, 1)
+mesh = SubResource("BoxMesh_go3xr")
+
+[node name="_MeshInstance3D_752" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, 1)
+mesh = SubResource("BoxMesh_vxu3l")
+
+[node name="_MeshInstance3D_753" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3, -1)
+mesh = SubResource("BoxMesh_wsxte")
+
+[node name="_MeshInstance3D_754" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, -1)
+mesh = SubResource("BoxMesh_ag57m")
+
+[node name="_MeshInstance3D_755" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1, -3)
+mesh = SubResource("BoxMesh_54itx")
+
+[node name="_MeshInstance3D_756" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+mesh = SubResource("BoxMesh_rkfru")
+
+[node name="_MeshInstance3D_757" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = SubResource("BoxMesh_pgfwy")
+
+[node name="_MeshInstance3D_758" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+mesh = SubResource("BoxMesh_jjtxs")
+
+[node name="_MeshInstance3D_759" type="MeshInstance3D" parent="dimensionalAnchor/origin"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+mesh = SubResource("BoxMesh_6gpik")

@@ -50,7 +50,7 @@ func _process(delta):
 		DD.set_text("Selected Structure",null)
 	var hit = get_pointed_voxel()
 	%SelectedBlock.texture = Main.load_texture_external("res://assets/icons/"+str(selected_block)+".png")
-	if hit != null and placementPreview:
+	if hit != null and placementPreview and g != null:
 		%OutlineMesh.show()
 		%BlockPreviewMesh.show()
 		var id = 2+(6*selected_block)+selected_rotation
@@ -180,7 +180,7 @@ func _physics_process(delta):
 	if hit != null:
 #		_cursor.show()
 #		_cursor.set_position(hit.position)
-		DD.set_text("Pointed voxel", str(hit.position))
+		DD.set_text("Pointed voxel", str(hit.position)+" | "+str(voxel_world_tool.get_voxel(hit.position)))
 	else:
 #		_cursor.hide()
 		DD.set_text("Pointed voxel", "---")
@@ -190,25 +190,26 @@ func _physics_process(delta):
 		velocity.y -= gravity * delta
 
 	if not paused:
-		# Handle Jump.
-		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-			velocity.y = JUMP_VELOCITY
-		if Input.is_action_just_pressed("ui_accept") and fly:
-			velocity.y = JUMP_VELOCITY*2
-		if Input.is_action_just_pressed("fly_down") and fly:
-			velocity.y = -JUMP_VELOCITY*2
-		if (Input.is_action_just_released("ui_accept") or Input.is_action_just_released("fly_down")) and fly:
-			velocity.y = 0
-		# Get the input direction and handle the movement/deceleration.
-		# As good practice, you should replace UI actions with custom gameplay actions.
-		var input_dir = Input.get_vector("left", "right", "up", "down")
-		var direction = (camera.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-		if direction:
-			velocity.x = direction.x * SPEED
-			velocity.z = direction.z * SPEED
-		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
-			velocity.z = move_toward(velocity.z, 0, SPEED)
+		if Input.get_vector("shift_left","shift_right","shift_forward","shift_backward").is_zero_approx() and is_zero_approx(Input.get_axis("shift_up","shift_down")):
+			# Handle Jump.
+			if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+				velocity.y = JUMP_VELOCITY
+			if Input.is_action_just_pressed("ui_accept") and fly:
+				velocity.y = JUMP_VELOCITY*2
+			if Input.is_action_just_pressed("fly_down") and fly:
+				velocity.y = -JUMP_VELOCITY*2
+			if (Input.is_action_just_released("ui_accept") or Input.is_action_just_released("fly_down")) and fly:
+				velocity.y = 0
+			# Get the input direction and handle the movement/deceleration.
+			# As good practice, you should replace UI actions with custom gameplay actions.
+			var input_dir = Input.get_vector("left", "right", "up", "down")
+			var direction = (camera.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+			if direction:
+				velocity.x = direction.x * SPEED
+				velocity.z = direction.z * SPEED
+			else:
+				velocity.x = move_toward(velocity.x, 0, SPEED)
+				velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
 

@@ -1,6 +1,6 @@
 extends Node
 
-const VERSION = "0.1.0"
+const VERSION = "0.2.0"
 
 const TEXTURE_SHEET_WIDTH = 256
 const TEXTURE_TILE_SIZE = 1.0 / TEXTURE_SHEET_WIDTH
@@ -19,6 +19,9 @@ var imageCache = {}
 var textureCache = {}
 
 var structures: Array[Structure]
+var pos1
+var pos2
+var clipboard: Array[BlockInstance] = []
 
 var player: Player = null
 
@@ -53,6 +56,39 @@ func _ready():
 		player = get_tree().current_scene.get_node("Player")
 	pass # Replace with function body.
 
+
+func _unhandled_input(event):
+	if pos1 != null and pos2 != null:
+		var vec = Vector3.ZERO
+		if Input.is_action_just_pressed("shift_up"):
+			vec = Vector3.UP
+			pass
+		if Input.is_action_just_pressed("shift_down"):
+			vec = Vector3.DOWN
+			pass
+		if Input.is_action_just_pressed("shift_forward"):
+			vec = Vector3.FORWARD
+			pass
+		if Input.is_action_just_pressed("shift_backward"):
+			vec = Vector3.BACK
+			pass
+		if Input.is_action_just_pressed("shift_left"):
+			vec = Vector3.LEFT
+			pass
+		if Input.is_action_just_pressed("shift_right"):
+			vec = Vector3.RIGHT
+			pass
+			
+		if vec == Vector3.ZERO:
+			return
+		
+		var min_vec = Vector3i(min(Main.pos1.x, Main.pos2.x), min(Main.pos1.y, Main.pos2.y), min(Main.pos1.z, Main.pos2.z))
+		var max_vec = Vector3i(max(Main.pos1.x, Main.pos2.x), max(Main.pos1.y, Main.pos2.y), max(Main.pos1.z, Main.pos2.z))
+
+		var o = get_tree().current_scene.get_node("Panel/OptionBar")
+		
+		o.move(vec)
+		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 @warning_ignore("unused_parameter")
@@ -251,7 +287,7 @@ func load_texture_external(imagePath,cache=true) -> ImageTexture:
 	var f = FileAccess.open(imagePath, FileAccess.READ)
 	var r = f.get_error() if is_instance_valid(f) else ERR_DOES_NOT_EXIST if is_instance_valid(f) else ERR_DOES_NOT_EXIST
 	if r != OK:
-		printerr("External texture load failed for file at "+imagePath+"."+error_string(r))
+		printerr("External texture load failed for file at "+imagePath+". "+error_string(r))
 		return ImageTexture.new()
 	var bytes = f.get_buffer(f.get_length())
 	var img = Image.new()

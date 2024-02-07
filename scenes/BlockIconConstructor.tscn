@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://w4nba5cvh0w5"]
 
 [ext_resource type="Script" path="res://scripts/misc/BlockSpriteGenerator.gd" id="1_shgqm"]
-[ext_resource type="ArrayMesh" path="res://assets/block_mesh.tres" id="2_wr1v3"]
+[ext_resource type="ArrayMesh" uid="uid://8dl8pdnf2v8s" path="res://assets/block_mesh.tres" id="2_wr1v3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_stym4"]
 sky_top_color = Color(0.32549, 0.607843, 1, 1)

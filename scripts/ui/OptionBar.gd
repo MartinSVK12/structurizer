@@ -25,10 +25,16 @@ func _on_structures_pressed():
 func _on_clear_pressed():
 	Main.structures.clear()
 	%StructureTree.reload()
+	for child in %Structures.get_children():
+		child.queue_free()
+	Main.pos1 = null
+	Main.pos2 = null
+	Main.clipboard = []
 
 
 func _on_refresh_pressed():
 	%StructureTree.reload()
+	get_tree().current_scene.reload_struct_renders()
 
 
 func _on_auto_add_toggled(button_pressed):
@@ -116,3 +122,74 @@ func _on_file_dialog_file_selected(path):
 				NamedBinaryTag.write(struct_tag,path,false)
 	else:
 		pass
+
+
+func _on_copy_pressed():
+	if Main.pos1 != null and Main.pos2 != null:
+		var min_vec = Vector3i(min(Main.pos1.x, Main.pos2.x), min(Main.pos1.y, Main.pos2.y), min(Main.pos1.z, Main.pos2.z))
+		var max_vec = Vector3i(max(Main.pos1.x, Main.pos2.x), max(Main.pos1.y, Main.pos2.y), max(Main.pos1.z, Main.pos2.z))
+	
+		Main.clipboard.clear()
+		for i in range(min_vec.x, max_vec.x + 1):
+			for j in range(min_vec.y, max_vec.y + 1):
+				for k in range(min_vec.z, max_vec.z + 1):
+					var pos = Vector3i(i, j, k)
+					var offset = pos - min_vec
+					var v = %Player.voxel_world_tool
+					if v.get_voxel(pos) > 1:
+						var meta = v.get_voxel_metadata(pos)
+						Main.clipboard.append(BlockInstance._new(offset,v.get_voxel(pos),meta["rot"]))
+						print(v.get_voxel(pos))
+					else:
+						Main.clipboard.append(BlockInstance._new(offset,-1,0))
+
+
+func _on_paste_pressed():
+	if %Player.get_pointed_voxel() != null:
+		paste(%Player.get_pointed_voxel().previous_position)
+
+func paste(pos: Vector3i):
+	if Main.clipboard != null and Main.clipboard.size() > 0:
+		for block in Main.clipboard:
+			if(pos+Vector3i(block.offset)).y <= 0:
+				return
+		for block in Main.clipboard:
+			if(pos+Vector3i(block.offset)).y > 0:
+				var v = %Player.voxel_world_tool
+				v.value = block.id
+				v.do_point(pos+Vector3i(block.offset))
+				v.set_voxel_metadata(pos+Vector3i(block.offset),{"id":block.id,"rot":block.rotation})
+				
+func move(offset: Vector3i):
+	_on_cut_pressed()
+	if Main.clipboard != null and Main.clipboard.size() > 0:
+		for block in Main.clipboard:
+			if(Vector3i(block.position)+offset).y > 0:
+				var v = %Player.voxel_world_tool
+				v.value = block.id
+				v.do_point(Vector3i(block.position)+offset)
+				v.set_voxel_metadata(Vector3i(block.position)+offset,{"id":block.id,"rot":block.rotation})
+	Main.pos1 += offset
+	get_tree().current_scene.reload_struct_renders()
+	Main.pos2 += offset
+	get_tree().current_scene.reload_struct_renders()
+
+func _on_cut_pressed():
+	if Main.pos1 != null and Main.pos2 != null:
+		var min_vec = Vector3i(min(Main.pos1.x, Main.pos2.x), min(Main.pos1.y, Main.pos2.y), min(Main.pos1.z, Main.pos2.z))
+		var max_vec = Vector3i(max(Main.pos1.x, Main.pos2.x), max(Main.pos1.y, Main.pos2.y), max(Main.pos1.z, Main.pos2.z))
+	
+		Main.clipboard.clear()
+		for i in range(min_vec.x, max_vec.x + 1):
+			for j in range(min_vec.y, max_vec.y + 1):
+				for k in range(min_vec.z, max_vec.z + 1):
+					var pos = Vector3i(i, j, k)
+					var offset = pos - min_vec
+					var v = %Player.voxel_world_tool
+					if v.get_voxel(pos) > 1:
+						var meta = v.get_voxel_metadata(pos)
+						Main.clipboard.append(BlockInstance._new(pos,v.get_voxel(pos),meta["rot"]).set_offset(offset))
+						%Player._place_single_voxel(pos,-1,0)
+						print(v.get_voxel(pos))
+					else:
+						Main.clipboard.append(BlockInstance._new(pos,-1,0).set_offset(offset))

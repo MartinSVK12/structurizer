@@ -43,7 +43,8 @@ func _on_substitution_swap_timer_timeout():
 				voxel_world_tool.do_point(struct.origin.position + block.position)
 
 func reload_struct_renders():
-	%Structures.get_children().all(func(C): C.free())
+	for child in %Structures.get_children():
+		child.queue_free()
 	var sub: BlockInstance = %StructureTree.currect_substitution_target
 	if sub != null:
 		var area = MeshInstance3D.new()
@@ -56,6 +57,30 @@ func reload_struct_renders():
 		area.mesh.surface_set_material(0,material)
 		area.position = sub.position
 		%Structures.add_child(area)
+	if Main.pos1 != null:
+		var root = MeshInstance3D.new()
+		root.name = "Position 1"
+		root.mesh = BoxMesh.new()
+		var material = ShaderMaterial.new()
+		material.shader = load("res://outline.gdshader")
+		material.set_shader_parameter("color",Color.BLUE)
+		material.set_shader_parameter("width",0.05)
+		material.set_shader_parameter("scale",Vector3(1.05,1.05,1.05))
+		root.mesh.surface_set_material(0,material)
+		%Structures.add_child(root)
+		root.global_position = Main.pos1
+	if Main.pos2 != null:
+		var root = MeshInstance3D.new()
+		root.name = "Position 2"
+		root.mesh = BoxMesh.new()
+		var material = ShaderMaterial.new()
+		material.shader = load("res://outline.gdshader")
+		material.set_shader_parameter("color",Color.DEEP_PINK)
+		material.set_shader_parameter("width",0.05)
+		material.set_shader_parameter("scale",Vector3(1.05,1.05,1.05))
+		root.mesh.surface_set_material(0,material)
+		%Structures.add_child(root)
+		root.global_position = Main.pos2
 	for struct in Main.structures:
 		if struct.has_origin():
 			var root = Node3D.new()

@@ -141,3 +141,23 @@ func _on_add_sub_pressed():
 			struct.add_substitution(meta["id"],currect_substitution_target.position,meta["rot"])
 			currect_substitution_target = null
 		reload()
+
+
+func _on_pos_1_pressed():
+	get_tree().current_scene.reload_struct_renders()
+	var hit = %Player.get_pointed_voxel()
+	if hit.position == Main.pos1:
+		Main.pos1 = null
+	else:
+		Main.pos1 = hit.position
+	get_tree().current_scene.reload_struct_renders()
+
+
+func _on_pos_2_pressed():
+	get_tree().current_scene.reload_struct_renders()
+	var hit = %Player.get_pointed_voxel()
+	if hit.position == Main.pos2:
+		Main.pos2 = null
+	else:
+		Main.pos2 = hit.position
+	get_tree().current_scene.reload_struct_renders()
